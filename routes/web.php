@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/{get}', function () {
+    if (! view()->exists('get')){
+        return view('error');
+    }
     return view('welcome');
 });
 
