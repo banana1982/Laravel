@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@home');
+
+Route::get('/error', 'ErrorController@error');
