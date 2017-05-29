@@ -8,10 +8,10 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     //
-    public function home($message){
-//        $message = '';
+    public function home(){
+        $message = 'Page not available!';
         if (!view()->exists('home')){
-            return view('error', ['message'=>$message]);
+            return view('error', ['msg'=>$message]);
         }
         else{
             return view('home');
