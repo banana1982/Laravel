@@ -9,7 +9,6 @@ class ErrorController extends Controller
 {
     //
     public function error (){
-
         return view('error', 'msg');
     }
 }
