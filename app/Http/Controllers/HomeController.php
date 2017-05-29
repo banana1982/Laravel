@@ -10,8 +10,8 @@ class HomeController extends Controller
     //
     public function home(){
         $message = 'Page not available!';
-        if (!view()->exists('home')){
-            return view('error', ['msg'=>$message]);
+        if (!view()->exists('home')) {
+            return view('error', ['msg' => $message]);
         }
         else{
             return view('home');
