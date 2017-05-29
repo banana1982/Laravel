@@ -81,6 +81,7 @@
                 <div class="title m-b-md">
                     Laravel Demo New </br>
                     <h5><a href="home.blade.php" >Enter Homepage</a></h5>
+                    <?php $message ?>
                 </div>
 
                 <div class="links">
