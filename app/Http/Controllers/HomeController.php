@@ -8,8 +8,8 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     //
-    public function home(){
-        $message = '';
+    public function home($message){
+//        $message = '';
         if (!view()->exists('home')){
             return view('error', ['message'=>$message]);
         }
