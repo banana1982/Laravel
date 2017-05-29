@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/{id}', function ($id) {
-    if (! view()->exists($id)){
+Route::get('/{id?}', function ($id) {
+    if (!view('/')->exists($id)){
         return view('error');
     }
     return view('welcome');
