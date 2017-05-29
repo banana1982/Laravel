@@ -11,13 +11,12 @@
 |
 */
 
-Route::get('/{id?}', function ($id) {
-    if (!view('/')->exists($id)){
-        return view('error');
-    }
+Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/home', 'HomeController@home');
 
-Route::get('/error', 'ErrorController@error');
+Route::get('/error', function (){
+    return view('error', 'msg');
+});
