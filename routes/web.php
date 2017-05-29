@@ -15,11 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('getHome', function (){
-    if (!view()->exists('/')){
-        return view('error',['message'=>'Page not available']);
-    }
-    else{
-        return view('home');
-    }
-});
+Route::get('/getHome', 'HomeController@home');
