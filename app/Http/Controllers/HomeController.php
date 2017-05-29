@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     //
-    public function getHome(){
+    public function getIndex(){
         $message = '';
         if (!view()->exists('home')){
             return view('error', ['message'=>$message]);
