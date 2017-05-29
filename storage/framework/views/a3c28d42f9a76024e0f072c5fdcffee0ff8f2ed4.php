@@ -79,7 +79,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel Demo New </br>
+                    <h5><a href="/home" >Enter Homepage</a></h5>
+                    <?php $message ?>
                 </div>
 
                 <div class="links">
