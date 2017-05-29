@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', function (){
+    if (!view()->exists('/')){
+        return view('error',['message'=>'Page not available']);
+    }
+    else{
+        return view('home');
+    }
+});
