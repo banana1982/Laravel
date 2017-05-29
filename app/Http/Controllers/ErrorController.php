@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class ErrorController extends Controller
 {
     //
-    public function getError ($message){
+    public function error (){
+        $message = 'Page not available';
         return view('error', ['message'=>$message]);
     }
 }
