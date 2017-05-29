@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/getHome', 'HomeController@home');
+Route::get('/home', 'HomeController@home');
