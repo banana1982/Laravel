@@ -1,1 +1,1 @@
-<h1><div>Error: <?php echo $message; ?></div></h1>
+<h1><div>Error: <?php echo $msg ; ?></div></h1>

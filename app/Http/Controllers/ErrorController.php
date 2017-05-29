@@ -9,6 +9,6 @@ class ErrorController extends Controller
     //
     public function error (){
         $message = 'Page not available';
-        return view('error', ['message'=>$message]);
+        return view('error', ['msg'=>$message]);
     }
 }
